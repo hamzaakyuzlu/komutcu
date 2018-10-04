@@ -1,0 +1,2 @@
+# komutcu
+basit komut calistirici
