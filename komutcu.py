@@ -19,7 +19,7 @@ class CiktiWindow(QDialog, Ui_dlgCikti):
     def calistir(self):
         try:
             
-            self.textCikti.setText(subprocess.check_output(self.komut))
+            self.textCikti.setText(subprocess.check_output(self.komut.split()))
         except:
             self.textCikti.setText("%s calistirilamadi." % self.komut)
             
